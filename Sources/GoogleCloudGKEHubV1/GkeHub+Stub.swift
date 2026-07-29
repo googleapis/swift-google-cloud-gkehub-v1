@@ -27,23 +27,23 @@ extension Clients {
   protocol GkeHubStub {
     func listMemberships(
       request: ListMembershipsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipsResponse
 
     func listBoundMemberships(
       request: ListBoundMembershipsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListBoundMembershipsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListBoundMembershipsResponse
 
     func listFeatures(
       request: ListFeaturesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListFeaturesResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListFeaturesResponse
 
     func getMembership(
       request: GetMembershipRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Membership
+    ) async throws -> GoogleCloudGKEHubV1.Membership
 
     func getFeature(
       request: GetFeatureRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Feature
+    ) async throws -> GoogleCloudGKEHubV1.Feature
 
     func createMembership(
       request: CreateMembershipRequest, options: GoogleCloudGax.RequestOptions
@@ -71,7 +71,7 @@ extension Clients {
 
     func generateConnectManifest(
       request: GenerateConnectManifestRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.GenerateConnectManifestResponse
+    ) async throws -> GoogleCloudGKEHubV1.GenerateConnectManifestResponse
 
     func createFleet(
       request: CreateFleetRequest, options: GoogleCloudGax.RequestOptions
@@ -79,7 +79,7 @@ extension Clients {
 
     func getFleet(
       request: GetFleetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Fleet
+    ) async throws -> GoogleCloudGKEHubV1.Fleet
 
     func updateFleet(
       request: UpdateFleetRequest, options: GoogleCloudGax.RequestOptions
@@ -91,11 +91,11 @@ extension Clients {
 
     func listFleets(
       request: ListFleetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListFleetsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListFleetsResponse
 
     func getScopeNamespace(
       request: GetScopeNamespaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Namespace
+    ) async throws -> GoogleCloudGKEHubV1.Namespace
 
     func createScopeNamespace(
       request: CreateScopeNamespaceRequest, options: GoogleCloudGax.RequestOptions
@@ -111,11 +111,11 @@ extension Clients {
 
     func listScopeNamespaces(
       request: ListScopeNamespacesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopeNamespacesResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListScopeNamespacesResponse
 
     func getScopeRbacroleBinding(
       request: GetScopeRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.RBACRoleBinding
+    ) async throws -> GoogleCloudGKEHubV1.RBACRoleBinding
 
     func createScopeRbacroleBinding(
       request: CreateScopeRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
@@ -131,11 +131,11 @@ extension Clients {
 
     func listScopeRbacroleBindings(
       request: ListScopeRBACRoleBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopeRBACRoleBindingsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListScopeRBACRoleBindingsResponse
 
     func getScope(
       request: GetScopeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Scope
+    ) async throws -> GoogleCloudGKEHubV1.Scope
 
     func createScope(
       request: CreateScopeRequest, options: GoogleCloudGax.RequestOptions
@@ -151,15 +151,15 @@ extension Clients {
 
     func listScopes(
       request: ListScopesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopesResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListScopesResponse
 
     func listPermittedScopes(
       request: ListPermittedScopesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListPermittedScopesResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListPermittedScopesResponse
 
     func getMembershipBinding(
       request: GetMembershipBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.MembershipBinding
+    ) async throws -> GoogleCloudGKEHubV1.MembershipBinding
 
     func createMembershipBinding(
       request: CreateMembershipBindingRequest, options: GoogleCloudGax.RequestOptions
@@ -175,11 +175,11 @@ extension Clients {
 
     func listMembershipBindings(
       request: ListMembershipBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipBindingsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipBindingsResponse
 
     func getMembershipRbacroleBinding(
       request: GetMembershipRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.RBACRoleBinding
+    ) async throws -> GoogleCloudGKEHubV1.RBACRoleBinding
 
     func createMembershipRbacroleBinding(
       request: CreateMembershipRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
@@ -195,11 +195,11 @@ extension Clients {
 
     func listMembershipRbacroleBindings(
       request: ListMembershipRBACRoleBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipRBACRoleBindingsResponse
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipRBACRoleBindingsResponse
 
     func generateMembershipRbacroleBindingYaml(
       request: GenerateMembershipRBACRoleBindingYAMLRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.GenerateMembershipRBACRoleBindingYAMLResponse
+    ) async throws -> GoogleCloudGKEHubV1.GenerateMembershipRBACRoleBindingYAMLResponse
 
     func listOperations(
       request: GoogleLongrunning.ListOperationsRequest, options: GoogleCloudGax.RequestOptions
@@ -228,7 +228,7 @@ extension Clients {
 
     public func listMemberships(
       request: ListMembershipsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -248,12 +248,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListMembershipsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListMembershipsResponse.self, from: data)
     }
 
     public func listBoundMemberships(
       request: ListBoundMembershipsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListBoundMembershipsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListBoundMembershipsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.scopeName as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.scope_name' is not set or is empty")
@@ -272,12 +272,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListBoundMembershipsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListBoundMembershipsResponse.self, from: data)
     }
 
     public func listFeatures(
       request: ListFeaturesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListFeaturesResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListFeaturesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -300,12 +300,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListFeaturesResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListFeaturesResponse.self, from: data)
     }
 
     public func getMembership(
       request: GetMembershipRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Membership {
+    ) async throws -> GoogleCloudGKEHubV1.Membership {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -320,12 +320,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.Membership.self, from: data)
+        GoogleCloudGKEHubV1.Membership.self, from: data)
     }
 
     public func getFeature(
       request: GetFeatureRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Feature {
+    ) async throws -> GoogleCloudGKEHubV1.Feature {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -344,7 +344,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.Feature.self, from: data)
+        GoogleCloudGKEHubV1.Feature.self, from: data)
     }
 
     public func createMembership(
@@ -503,7 +503,7 @@ extension Clients {
 
     public func generateConnectManifest(
       request: GenerateConnectManifestRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.GenerateConnectManifestResponse {
+    ) async throws -> GoogleCloudGKEHubV1.GenerateConnectManifestResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -527,7 +527,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.GenerateConnectManifestResponse.self, from: data)
+        GoogleCloudGKEHubV1.GenerateConnectManifestResponse.self, from: data)
     }
 
     public func createFleet(
@@ -556,7 +556,7 @@ extension Clients {
 
     public func getFleet(
       request: GetFleetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Fleet {
+    ) async throws -> GoogleCloudGKEHubV1.Fleet {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -571,7 +571,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.Fleet.self, from: data)
+        GoogleCloudGKEHubV1.Fleet.self, from: data)
     }
 
     public func updateFleet(
@@ -622,7 +622,7 @@ extension Clients {
 
     public func listFleets(
       request: ListFleetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListFleetsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListFleetsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -640,12 +640,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListFleetsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListFleetsResponse.self, from: data)
     }
 
     public func getScopeNamespace(
       request: GetScopeNamespaceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Namespace {
+    ) async throws -> GoogleCloudGKEHubV1.Namespace {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -660,7 +660,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.Namespace.self, from: data)
+        GoogleCloudGKEHubV1.Namespace.self, from: data)
     }
 
     public func createScopeNamespace(
@@ -740,7 +740,7 @@ extension Clients {
 
     public func listScopeNamespaces(
       request: ListScopeNamespacesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopeNamespacesResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListScopeNamespacesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -758,12 +758,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListScopeNamespacesResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListScopeNamespacesResponse.self, from: data)
     }
 
     public func getScopeRbacroleBinding(
       request: GetScopeRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.RBACRoleBinding {
+    ) async throws -> GoogleCloudGKEHubV1.RBACRoleBinding {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -778,7 +778,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.RBACRoleBinding.self, from: data)
+        GoogleCloudGKEHubV1.RBACRoleBinding.self, from: data)
     }
 
     public func createScopeRbacroleBinding(
@@ -858,7 +858,7 @@ extension Clients {
 
     public func listScopeRbacroleBindings(
       request: ListScopeRBACRoleBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopeRBACRoleBindingsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListScopeRBACRoleBindingsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -876,12 +876,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListScopeRBACRoleBindingsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListScopeRBACRoleBindingsResponse.self, from: data)
     }
 
     public func getScope(
       request: GetScopeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.Scope {
+    ) async throws -> GoogleCloudGKEHubV1.Scope {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -896,7 +896,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.Scope.self, from: data)
+        GoogleCloudGKEHubV1.Scope.self, from: data)
     }
 
     public func createScope(
@@ -973,7 +973,7 @@ extension Clients {
 
     public func listScopes(
       request: ListScopesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListScopesResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListScopesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -991,12 +991,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListScopesResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListScopesResponse.self, from: data)
     }
 
     public func listPermittedScopes(
       request: ListPermittedScopesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListPermittedScopesResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListPermittedScopesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1014,12 +1014,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListPermittedScopesResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListPermittedScopesResponse.self, from: data)
     }
 
     public func getMembershipBinding(
       request: GetMembershipBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.MembershipBinding {
+    ) async throws -> GoogleCloudGKEHubV1.MembershipBinding {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1034,7 +1034,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.MembershipBinding.self, from: data)
+        GoogleCloudGKEHubV1.MembershipBinding.self, from: data)
     }
 
     public func createMembershipBinding(
@@ -1114,7 +1114,7 @@ extension Clients {
 
     public func listMembershipBindings(
       request: ListMembershipBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipBindingsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipBindingsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1133,12 +1133,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListMembershipBindingsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListMembershipBindingsResponse.self, from: data)
     }
 
     public func getMembershipRbacroleBinding(
       request: GetMembershipRBACRoleBindingRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.RBACRoleBinding {
+    ) async throws -> GoogleCloudGKEHubV1.RBACRoleBinding {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1153,7 +1153,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.RBACRoleBinding.self, from: data)
+        GoogleCloudGKEHubV1.RBACRoleBinding.self, from: data)
     }
 
     public func createMembershipRbacroleBinding(
@@ -1233,7 +1233,7 @@ extension Clients {
 
     public func listMembershipRbacroleBindings(
       request: ListMembershipRBACRoleBindingsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.ListMembershipRBACRoleBindingsResponse {
+    ) async throws -> GoogleCloudGKEHubV1.ListMembershipRBACRoleBindingsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1251,12 +1251,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.ListMembershipRBACRoleBindingsResponse.self, from: data)
+        GoogleCloudGKEHubV1.ListMembershipRBACRoleBindingsResponse.self, from: data)
     }
 
     public func generateMembershipRbacroleBindingYaml(
       request: GenerateMembershipRBACRoleBindingYAMLRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudGkehubV1.GenerateMembershipRBACRoleBindingYAMLResponse {
+    ) async throws -> GoogleCloudGKEHubV1.GenerateMembershipRBACRoleBindingYAMLResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1278,7 +1278,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudGkehubV1.GenerateMembershipRBACRoleBindingYAMLResponse.self, from: data)
+        GoogleCloudGKEHubV1.GenerateMembershipRBACRoleBindingYAMLResponse.self, from: data)
     }
 
     public func listOperations(
